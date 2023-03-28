@@ -1,0 +1,31 @@
+
+EnvironmentNameNotFound: Could not find conda environment: conda_env
+You can list all discoverable environments with `conda info --envs`.
+
+
+  jupyter lab --no-browser --ContentsManager.allow_hidden=True --ip=${HOST_IP} --port 8067 
+[I 21:50:30.085 LabApp] JupyterLab extension loaded from /software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyterlab
+[I 21:50:30.085 LabApp] JupyterLab application directory is /software/python-anaconda-2020.02-el7-x86_64/share/jupyter/lab
+[W 21:50:30.088 LabApp] Error loading server extension voila
+    Traceback (most recent call last):
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/notebookapp.py", line 1670, in init_server_extensions
+        mod = importlib.import_module(modulename)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/importlib/__init__.py", line 127, in import_module
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+    ModuleNotFoundError: No module named 'voila'
+[I 21:50:30.089 LabApp] Serving notebooks from local directory: /project2/rossby/group8
+[I 21:50:30.090 LabApp] The Jupyter Notebook is running at:
+[I 21:50:30.090 LabApp] http://10.50.221.6:8067/?token=ff4285c2a1ab86973393fec2c6d90058974b9aa31927de66
+[I 21:50:30.090 LabApp]  or http://127.0.0.1:8067/?token=ff4285c2a1ab86973393fec2c6d90058974b9aa31927de66
+[I 21:50:30.090 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 21:50:30.096 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/zwwang/.local/share/jupyter/runtime/nbserver-54865-open.html
+    Or copy and paste one of these URLs:
+        http://10.50.221.6:8067/?token=ff4285c2a1ab86973393fec2c6d90058974b9aa31927de66
+     or http://127.0.0.1:8067/?token=ff4285c2a1ab86973393fec2c6d90058974b9aa31927de66
+slurmstepd-midway2-0006: error: *** JOB 21545138 ON midway2-0006 CANCELLED AT 2022-07-12T21:57:18 ***

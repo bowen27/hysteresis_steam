@@ -1,0 +1,397 @@
+
+EnvironmentNameNotFound: Could not find conda environment: conda_env
+You can list all discoverable environments with `conda info --envs`.
+
+
+  jupyter lab --no-browser --ContentsManager.allow_hidden=True --ip=${HOST_IP} --port 8047 
+[I 21:51:07.089 LabApp] JupyterLab extension loaded from /software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyterlab
+[I 21:51:07.089 LabApp] JupyterLab application directory is /software/python-anaconda-2020.02-el7-x86_64/share/jupyter/lab
+[W 21:51:07.092 LabApp] Error loading server extension voila
+    Traceback (most recent call last):
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/notebookapp.py", line 1670, in init_server_extensions
+        mod = importlib.import_module(modulename)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/importlib/__init__.py", line 127, in import_module
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+    ModuleNotFoundError: No module named 'voila'
+[I 21:51:07.093 LabApp] Serving notebooks from local directory: /project2/rossby/group8
+[I 21:51:07.093 LabApp] The Jupyter Notebook is running at:
+[I 21:51:07.094 LabApp] http://10.50.221.6:8047/?token=da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5
+[I 21:51:07.094 LabApp]  or http://127.0.0.1:8047/?token=da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5
+[I 21:51:07.094 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 21:51:07.105 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/zwwang/.local/share/jupyter/runtime/nbserver-55067-open.html
+    Or copy and paste one of these URLs:
+        http://10.50.221.6:8047/?token=da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5
+     or http://127.0.0.1:8047/?token=da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5
+[I 21:51:55.818 LabApp] 302 GET /?token=da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5 (10.50.220.71) 0.98ms
+[W 21:51:59.387 LabApp] Could not determine jupyterlab build status without nodejs
+[W 21:52:00.905 LabApp] 404 GET /api/contents/cape_extreme/storm_structure.ipynb?content=0&1657680720891 (10.50.220.71): No such file or directory: cape_extreme/storm_structure.ipynb
+[W 21:52:00.905 LabApp] No such file or directory: cape_extreme/storm_structure.ipynb
+[W 21:52:00.905 LabApp] 404 GET /api/contents/cape_extreme/storm_structure.ipynb?content=0&1657680720891 (10.50.220.71) 3.05ms referer=http://localhost:8047/lab
+[W 21:52:00.906 LabApp] 404 GET /api/contents/cape_cmip6/cape_slopes_analysis.ipynb?content=0&1657680720892 (10.50.220.71): No such file or directory: cape_cmip6/cape_slopes_analysis.ipynb
+[W 21:52:00.906 LabApp] No such file or directory: cape_cmip6/cape_slopes_analysis.ipynb
+[W 21:52:00.906 LabApp] 404 GET /api/contents/cape_cmip6/cape_slopes_analysis.ipynb?content=0&1657680720892 (10.50.220.71) 3.16ms referer=http://localhost:8047/lab
+[W 21:52:00.908 LabApp] 404 GET /api/contents/cape_cmip6/Final_cape_cmip.ipynb?content=0&1657680720893 (10.50.220.71): No such file or directory: cape_cmip6/Final_cape_cmip.ipynb
+[W 21:52:00.909 LabApp] No such file or directory: cape_cmip6/Final_cape_cmip.ipynb
+[W 21:52:00.909 LabApp] 404 GET /api/contents/cape_cmip6/Final_cape_cmip.ipynb?content=0&1657680720893 (10.50.220.71) 1.47ms referer=http://localhost:8047/lab
+[W 21:52:00.910 LabApp] 404 GET /api/contents/cape_cmip6/SO13_cmip.ipynb?content=0&1657680720895 (10.50.220.71): No such file or directory: cape_cmip6/SO13_cmip.ipynb
+[W 21:52:00.911 LabApp] No such file or directory: cape_cmip6/SO13_cmip.ipynb
+[W 21:52:00.911 LabApp] 404 GET /api/contents/cape_cmip6/SO13_cmip.ipynb?content=0&1657680720895 (10.50.220.71) 1.47ms referer=http://localhost:8047/lab
+[W 21:52:01.746 LabApp] 404 GET /api/contents/cape_cmip6/so13_data?1657680721731 (10.50.220.71): No such file or directory: cape_cmip6/so13_data
+[W 21:52:01.746 LabApp] No such file or directory: cape_cmip6/so13_data
+[W 21:52:01.747 LabApp] 404 GET /api/contents/cape_cmip6/so13_data?1657680721731 (10.50.220.71) 4.07ms referer=http://localhost:8047/lab
+[W 21:52:04.767 LabApp] Notebook vapor_bouyancy.ipynb is not trusted
+[E 21:52:04.967 LabApp] Failed to run command:
+    ['/home/zwwang/scratch-midway2/xarray_env/bin/python', '-m', 'ipykernel_launcher', '-f', '/home/zwwang/.local/share/jupyter/runtime/kernel-51b75064-65f9-4fb2-ad65-b050e34483e0.json']
+        PATH='/software/slurm-current-el7-x86_64/bin:/software/python-anaconda-2020.02-el7-x86_64/bin:/software/matlab-2020b-el7-x86_64/bin:/project2/rossby/anaconda/bin:/project2/rossby/group4/isca_env/bin:/software/python-anaconda-2020.02-el7-x86_64/condabin:/bin:/software/git-2.10-el7-x86_64/bin:/software/subversion-1.9.4-el7-x86_64/bin:/software/bin:/srv/adm/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/home/zwwang/bin'
+        with kwargs:
+    {'stdin': -1, 'stdout': None, 'stderr': None, 'cwd': '/project2/rossby/group8', 'start_new_session': True}
+    
+[E 21:52:04.968 LabApp] Uncaught exception POST /api/sessions?1657680724892 (10.50.220.71)
+    HTTPServerRequest(protocol='http', host='localhost:8047', method='POST', uri='/api/sessions?1657680724892', version='HTTP/1.1', remote_ip='10.50.220.71')
+    Traceback (most recent call last):
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/handlers.py", line 72, in post
+        type=mtype))
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 88, in create_session
+        kernel_id = yield self.start_kernel_for_session(session_id, path, name, type, kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 101, in start_kernel_for_session
+        self.kernel_manager.start_kernel(path=kernel_path, kernel_name=kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 209, in wrapper
+        yielded = next(result)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/kernels/kernelmanager.py", line 168, in start_kernel
+        super(MappingKernelManager, self).start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/multikernelmanager.py", line 158, in start_kernel
+        km.start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 305, in start_kernel
+        self.kernel = self._launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 212, in _launch_kernel
+        return launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/launcher.py", line 135, in launch_kernel
+        proc = Popen(cmd, **kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 800, in __init__
+        restore_signals, start_new_session)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 1551, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/zwwang/scratch-midway2/xarray_env/bin/python': '/home/zwwang/scratch-midway2/xarray_env/bin/python'
+[W 21:52:04.987 LabApp] Unhandled error
+[E 21:52:04.988 LabApp] {
+      "Host": "localhost:8047",
+      "Connection": "keep-alive",
+      "Content-Length": "107",
+      "Sec-Ch-Ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "Authorization": "token da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5",
+      "X-Xsrftoken": "2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "Content-Type": "application/json",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
+      "Sec-Ch-Ua-Platform": "\"macOS\"",
+      "Accept": "*/*",
+      "Origin": "http://localhost:8047",
+      "Sec-Fetch-Site": "same-origin",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Dest": "empty",
+      "Referer": "http://localhost:8047/lab",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+      "Cookie": "username-localhost-8268=\"2|1:0|10:1655246277|23:username-localhost-8268|44:Mjk2MzQ3MTY2OWZiNGM0MjkxNjUyMDM1ZjgxMjMzMmE=|f060e4eee6b7f1fd7cd01fcc26c7f2eee5153553c5b01671a4d35065427b5dc2\"; username-localhost-8105=\"2|1:0|10:1655398304|23:username-localhost-8105|44:MzRiNzRlNjMzN2Y3NGVkMzk3NjE0ZGViYzVjMTRmN2Q=|4b0bb94a9f96c828334490fac00a5cfda3737173d7c652afa4d748f32ac3b4d6\"; username-localhost-8310=\"2|1:0|10:1655425761|23:username-localhost-8310|44:OTNiYTk5YWUyN2IzNGQ2M2JkNTVjNzVkMTBlZTM3NTU=|64ba64a91f3e599317923b5bf9ae7545e7b627b545473880ccc9d884fae5e33b\"; username-localhost-8798=\"2|1:0|10:1655500713|23:username-localhost-8798|44:ZjNiYzFmZWNlMWE4NDBhNWFjYjcwYzNjZDM3MmZiODg=|7129966be60ca14487d5617ff9993483070428fd0512dcedb8a9773a2db7794c\"; username-localhost-8888=\"2|1:0|10:1655751286|23:username-localhost-8888|44:MGMyYTI3NDJmNTQ4NDZmMzgxMjBhNjhjNmU2MTc2MDc=|b40e18bc97922babfab007957de9ce40105e4feb75235f892d7f6b99fece591d\"; username-localhost-8342=\"2|1:0|10:1655850764|23:username-localhost-8342|44:ZjQzODVjZmMzNzkzNGExMDk2NDgyZDhlODlhMzA0YmU=|b6a10c95bcd03832c4eb505f72c168593eb1d86b6d2d0d16c75eb7b90204cdab\"; username-localhost-8303=\"2|1:0|10:1655939161|23:username-localhost-8303|44:MDQ3ZmU0MDM0OGM2NGUyYjhhNDBkZTYwYThiZjY4MTY=|acbbbf55d86485d51c327439ce7e338d922d32ceb646fe3dcec9062ffccd2571\"; username-localhost-8747=\"2|1:0|10:1655959079|23:username-localhost-8747|44:MTJjYWNmMjcwMzMwNDEwMWFjOTk3YWEzZjJhYzBlNzc=|95236791d400169401f110a606e48142739c1cbce33d3eab31ab9f68f678aea2\"; username-localhost-8722=\"2|1:0|10:1656105383|23:username-localhost-8722|44:YTZmYmU2OTU2NzU2NDZhMWE0Y2ViN2YwM2RlNzFkNTA=|593abc48bee7f2d301ebca7c1a09d8fd80de9528ec1e73de3b657df2da482080\"; username-localhost-8297=\"2|1:0|10:1656439086|23:username-localhost-8297|44:NDNkYzBmNWYzNDM1NDA4M2EzYmQ4NzEyZTFiOTcxZTY=|1d0d1be4c09127da371b3264510823442264cc0312b3353cdf00bb0e17c837b4\"; username-localhost-8635=\"2|1:0|10:1656462757|23:username-localhost-8635|44:MmZhYWE2MDlmY2QxNDA4Y2JlZDlmZDIwM2EzNjU4OTE=|27b55599702040b770718aeaed30974f46784e7dc3c2d8450b6410220631edd2\"; _xsrf=2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715; username-localhost-8047=\"2|1:0|10:1657680724|23:username-localhost-8047|44:YTNlOTc3MjhhZDliNGEzODg1NWNkODhlZmFlZTMxZjg=|5f7e323509f9b6cb83f4c8122e30746357a5e8fed7bc3cd2ecba964082a5d8cb\""
+    }
+[E 21:52:04.988 LabApp] 500 POST /api/sessions?1657680724892 (10.50.220.71) 77.06ms referer=http://localhost:8047/lab
+[W 21:52:08.833 LabApp] Notebook saturation_specific_humidity.ipynb is not trusted
+[E 21:52:08.924 LabApp] Failed to run command:
+    ['/home/zwwang/scratch-midway2/xarray_env/bin/python', '-m', 'ipykernel_launcher', '-f', '/home/zwwang/.local/share/jupyter/runtime/kernel-4992ae14-0af2-4bf6-a7bf-e1e50dfab183.json']
+        PATH='/software/slurm-current-el7-x86_64/bin:/software/python-anaconda-2020.02-el7-x86_64/bin:/software/matlab-2020b-el7-x86_64/bin:/project2/rossby/anaconda/bin:/project2/rossby/group4/isca_env/bin:/software/python-anaconda-2020.02-el7-x86_64/condabin:/bin:/software/git-2.10-el7-x86_64/bin:/software/subversion-1.9.4-el7-x86_64/bin:/software/bin:/srv/adm/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/home/zwwang/bin'
+        with kwargs:
+    {'stdin': -1, 'stdout': None, 'stderr': None, 'cwd': '/project2/rossby/group8', 'start_new_session': True}
+    
+[E 21:52:08.924 LabApp] Uncaught exception POST /api/sessions?1657680728900 (10.50.220.71)
+    HTTPServerRequest(protocol='http', host='localhost:8047', method='POST', uri='/api/sessions?1657680728900', version='HTTP/1.1', remote_ip='10.50.220.71')
+    Traceback (most recent call last):
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/handlers.py", line 72, in post
+        type=mtype))
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 88, in create_session
+        kernel_id = yield self.start_kernel_for_session(session_id, path, name, type, kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 101, in start_kernel_for_session
+        self.kernel_manager.start_kernel(path=kernel_path, kernel_name=kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 209, in wrapper
+        yielded = next(result)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/kernels/kernelmanager.py", line 168, in start_kernel
+        super(MappingKernelManager, self).start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/multikernelmanager.py", line 158, in start_kernel
+        km.start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 305, in start_kernel
+        self.kernel = self._launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 212, in _launch_kernel
+        return launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/launcher.py", line 135, in launch_kernel
+        proc = Popen(cmd, **kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 800, in __init__
+        restore_signals, start_new_session)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 1551, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/zwwang/scratch-midway2/xarray_env/bin/python': '/home/zwwang/scratch-midway2/xarray_env/bin/python'
+[W 21:52:08.925 LabApp] Unhandled error
+[E 21:52:08.926 LabApp] {
+      "Host": "localhost:8047",
+      "Connection": "keep-alive",
+      "Content-Length": "135",
+      "Sec-Ch-Ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "Authorization": "token da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5",
+      "X-Xsrftoken": "2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "Content-Type": "application/json",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
+      "Sec-Ch-Ua-Platform": "\"macOS\"",
+      "Accept": "*/*",
+      "Origin": "http://localhost:8047",
+      "Sec-Fetch-Site": "same-origin",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Dest": "empty",
+      "Referer": "http://localhost:8047/lab",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+      "Cookie": "username-localhost-8268=\"2|1:0|10:1655246277|23:username-localhost-8268|44:Mjk2MzQ3MTY2OWZiNGM0MjkxNjUyMDM1ZjgxMjMzMmE=|f060e4eee6b7f1fd7cd01fcc26c7f2eee5153553c5b01671a4d35065427b5dc2\"; username-localhost-8105=\"2|1:0|10:1655398304|23:username-localhost-8105|44:MzRiNzRlNjMzN2Y3NGVkMzk3NjE0ZGViYzVjMTRmN2Q=|4b0bb94a9f96c828334490fac00a5cfda3737173d7c652afa4d748f32ac3b4d6\"; username-localhost-8310=\"2|1:0|10:1655425761|23:username-localhost-8310|44:OTNiYTk5YWUyN2IzNGQ2M2JkNTVjNzVkMTBlZTM3NTU=|64ba64a91f3e599317923b5bf9ae7545e7b627b545473880ccc9d884fae5e33b\"; username-localhost-8798=\"2|1:0|10:1655500713|23:username-localhost-8798|44:ZjNiYzFmZWNlMWE4NDBhNWFjYjcwYzNjZDM3MmZiODg=|7129966be60ca14487d5617ff9993483070428fd0512dcedb8a9773a2db7794c\"; username-localhost-8888=\"2|1:0|10:1655751286|23:username-localhost-8888|44:MGMyYTI3NDJmNTQ4NDZmMzgxMjBhNjhjNmU2MTc2MDc=|b40e18bc97922babfab007957de9ce40105e4feb75235f892d7f6b99fece591d\"; username-localhost-8342=\"2|1:0|10:1655850764|23:username-localhost-8342|44:ZjQzODVjZmMzNzkzNGExMDk2NDgyZDhlODlhMzA0YmU=|b6a10c95bcd03832c4eb505f72c168593eb1d86b6d2d0d16c75eb7b90204cdab\"; username-localhost-8303=\"2|1:0|10:1655939161|23:username-localhost-8303|44:MDQ3ZmU0MDM0OGM2NGUyYjhhNDBkZTYwYThiZjY4MTY=|acbbbf55d86485d51c327439ce7e338d922d32ceb646fe3dcec9062ffccd2571\"; username-localhost-8747=\"2|1:0|10:1655959079|23:username-localhost-8747|44:MTJjYWNmMjcwMzMwNDEwMWFjOTk3YWEzZjJhYzBlNzc=|95236791d400169401f110a606e48142739c1cbce33d3eab31ab9f68f678aea2\"; username-localhost-8722=\"2|1:0|10:1656105383|23:username-localhost-8722|44:YTZmYmU2OTU2NzU2NDZhMWE0Y2ViN2YwM2RlNzFkNTA=|593abc48bee7f2d301ebca7c1a09d8fd80de9528ec1e73de3b657df2da482080\"; username-localhost-8297=\"2|1:0|10:1656439086|23:username-localhost-8297|44:NDNkYzBmNWYzNDM1NDA4M2EzYmQ4NzEyZTFiOTcxZTY=|1d0d1be4c09127da371b3264510823442264cc0312b3353cdf00bb0e17c837b4\"; username-localhost-8635=\"2|1:0|10:1656462757|23:username-localhost-8635|44:MmZhYWE2MDlmY2QxNDA4Y2JlZDlmZDIwM2EzNjU4OTE=|27b55599702040b770718aeaed30974f46784e7dc3c2d8450b6410220631edd2\"; _xsrf=2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715; username-localhost-8047=\"2|1:0|10:1657680728|23:username-localhost-8047|44:NTRlODA3YzcxNmRlNGZiNjlhYzBkODE5NDFhYTk5NmM=|474d9ec4bd302f955d1d673c959c54093476c9416580e9b8a1ff97d213ccad76\""
+    }
+[E 21:52:08.926 LabApp] 500 POST /api/sessions?1657680728900 (10.50.220.71) 14.86ms referer=http://localhost:8047/lab
+[E 21:52:13.002 LabApp] Failed to run command:
+    ['/home/zwwang/scratch-midway2/xarray_env/bin/python', '-m', 'ipykernel_launcher', '-f', '/home/zwwang/.local/share/jupyter/runtime/kernel-1291d48b-4a22-4735-8899-bb768e3ef2b4.json']
+        PATH='/software/slurm-current-el7-x86_64/bin:/software/python-anaconda-2020.02-el7-x86_64/bin:/software/matlab-2020b-el7-x86_64/bin:/project2/rossby/anaconda/bin:/project2/rossby/group4/isca_env/bin:/software/python-anaconda-2020.02-el7-x86_64/condabin:/bin:/software/git-2.10-el7-x86_64/bin:/software/subversion-1.9.4-el7-x86_64/bin:/software/bin:/srv/adm/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/home/zwwang/bin'
+        with kwargs:
+    {'stdin': -1, 'stdout': None, 'stderr': None, 'cwd': '/project2/rossby/group8', 'start_new_session': True}
+    
+[E 21:52:13.003 LabApp] Uncaught exception POST /api/sessions?1657680732979 (10.50.220.71)
+    HTTPServerRequest(protocol='http', host='localhost:8047', method='POST', uri='/api/sessions?1657680732979', version='HTTP/1.1', remote_ip='10.50.220.71')
+    Traceback (most recent call last):
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/handlers.py", line 72, in post
+        type=mtype))
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 88, in create_session
+        kernel_id = yield self.start_kernel_for_session(session_id, path, name, type, kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 101, in start_kernel_for_session
+        self.kernel_manager.start_kernel(path=kernel_path, kernel_name=kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 209, in wrapper
+        yielded = next(result)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/kernels/kernelmanager.py", line 168, in start_kernel
+        super(MappingKernelManager, self).start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/multikernelmanager.py", line 158, in start_kernel
+        km.start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 305, in start_kernel
+        self.kernel = self._launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 212, in _launch_kernel
+        return launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/launcher.py", line 135, in launch_kernel
+        proc = Popen(cmd, **kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 800, in __init__
+        restore_signals, start_new_session)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 1551, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/zwwang/scratch-midway2/xarray_env/bin/python': '/home/zwwang/scratch-midway2/xarray_env/bin/python'
+[W 21:52:13.004 LabApp] Unhandled error
+[E 21:52:13.005 LabApp] {
+      "Host": "localhost:8047",
+      "Connection": "keep-alive",
+      "Content-Length": "135",
+      "Sec-Ch-Ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "Authorization": "token da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5",
+      "X-Xsrftoken": "2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "Content-Type": "application/json",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
+      "Sec-Ch-Ua-Platform": "\"macOS\"",
+      "Accept": "*/*",
+      "Origin": "http://localhost:8047",
+      "Sec-Fetch-Site": "same-origin",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Dest": "empty",
+      "Referer": "http://localhost:8047/lab",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+      "Cookie": "username-localhost-8268=\"2|1:0|10:1655246277|23:username-localhost-8268|44:Mjk2MzQ3MTY2OWZiNGM0MjkxNjUyMDM1ZjgxMjMzMmE=|f060e4eee6b7f1fd7cd01fcc26c7f2eee5153553c5b01671a4d35065427b5dc2\"; username-localhost-8105=\"2|1:0|10:1655398304|23:username-localhost-8105|44:MzRiNzRlNjMzN2Y3NGVkMzk3NjE0ZGViYzVjMTRmN2Q=|4b0bb94a9f96c828334490fac00a5cfda3737173d7c652afa4d748f32ac3b4d6\"; username-localhost-8310=\"2|1:0|10:1655425761|23:username-localhost-8310|44:OTNiYTk5YWUyN2IzNGQ2M2JkNTVjNzVkMTBlZTM3NTU=|64ba64a91f3e599317923b5bf9ae7545e7b627b545473880ccc9d884fae5e33b\"; username-localhost-8798=\"2|1:0|10:1655500713|23:username-localhost-8798|44:ZjNiYzFmZWNlMWE4NDBhNWFjYjcwYzNjZDM3MmZiODg=|7129966be60ca14487d5617ff9993483070428fd0512dcedb8a9773a2db7794c\"; username-localhost-8888=\"2|1:0|10:1655751286|23:username-localhost-8888|44:MGMyYTI3NDJmNTQ4NDZmMzgxMjBhNjhjNmU2MTc2MDc=|b40e18bc97922babfab007957de9ce40105e4feb75235f892d7f6b99fece591d\"; username-localhost-8342=\"2|1:0|10:1655850764|23:username-localhost-8342|44:ZjQzODVjZmMzNzkzNGExMDk2NDgyZDhlODlhMzA0YmU=|b6a10c95bcd03832c4eb505f72c168593eb1d86b6d2d0d16c75eb7b90204cdab\"; username-localhost-8303=\"2|1:0|10:1655939161|23:username-localhost-8303|44:MDQ3ZmU0MDM0OGM2NGUyYjhhNDBkZTYwYThiZjY4MTY=|acbbbf55d86485d51c327439ce7e338d922d32ceb646fe3dcec9062ffccd2571\"; username-localhost-8747=\"2|1:0|10:1655959079|23:username-localhost-8747|44:MTJjYWNmMjcwMzMwNDEwMWFjOTk3YWEzZjJhYzBlNzc=|95236791d400169401f110a606e48142739c1cbce33d3eab31ab9f68f678aea2\"; username-localhost-8722=\"2|1:0|10:1656105383|23:username-localhost-8722|44:YTZmYmU2OTU2NzU2NDZhMWE0Y2ViN2YwM2RlNzFkNTA=|593abc48bee7f2d301ebca7c1a09d8fd80de9528ec1e73de3b657df2da482080\"; username-localhost-8297=\"2|1:0|10:1656439086|23:username-localhost-8297|44:NDNkYzBmNWYzNDM1NDA4M2EzYmQ4NzEyZTFiOTcxZTY=|1d0d1be4c09127da371b3264510823442264cc0312b3353cdf00bb0e17c837b4\"; username-localhost-8635=\"2|1:0|10:1656462757|23:username-localhost-8635|44:MmZhYWE2MDlmY2QxNDA4Y2JlZDlmZDIwM2EzNjU4OTE=|27b55599702040b770718aeaed30974f46784e7dc3c2d8450b6410220631edd2\"; _xsrf=2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715; username-localhost-8047=\"2|1:0|10:1657680729|23:username-localhost-8047|44:NWQ3ZDIyZTg0ZjA2NGNkZTgxMjg2NmIxZjliNTZhMDE=|7093c7f6ed70b96199187584d6f0ac781f4175f51ed003540f340784ec5ff6b0\""
+    }
+[E 21:52:13.005 LabApp] 500 POST /api/sessions?1657680732979 (10.50.220.71) 14.74ms referer=http://localhost:8047/lab
+[E 21:52:58.743 LabApp] Failed to run command:
+    ['/home/zwwang/scratch-midway2/xarray_env/bin/python', '-m', 'ipykernel_launcher', '-f', '/home/zwwang/.local/share/jupyter/runtime/kernel-9bab0df3-b059-4565-85eb-b46092ff148f.json']
+        PATH='/software/slurm-current-el7-x86_64/bin:/software/python-anaconda-2020.02-el7-x86_64/bin:/software/matlab-2020b-el7-x86_64/bin:/project2/rossby/anaconda/bin:/project2/rossby/group4/isca_env/bin:/software/python-anaconda-2020.02-el7-x86_64/condabin:/bin:/software/git-2.10-el7-x86_64/bin:/software/subversion-1.9.4-el7-x86_64/bin:/software/bin:/srv/adm/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/home/zwwang/bin'
+        with kwargs:
+    {'stdin': -1, 'stdout': None, 'stderr': None, 'cwd': '/project2/rossby/group8', 'start_new_session': True}
+    
+[E 21:52:58.744 LabApp] Uncaught exception POST /api/sessions?1657680778717 (10.50.220.71)
+    HTTPServerRequest(protocol='http', host='localhost:8047', method='POST', uri='/api/sessions?1657680778717', version='HTTP/1.1', remote_ip='10.50.220.71')
+    Traceback (most recent call last):
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/handlers.py", line 72, in post
+        type=mtype))
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 88, in create_session
+        kernel_id = yield self.start_kernel_for_session(session_id, path, name, type, kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 101, in start_kernel_for_session
+        self.kernel_manager.start_kernel(path=kernel_path, kernel_name=kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 209, in wrapper
+        yielded = next(result)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/kernels/kernelmanager.py", line 168, in start_kernel
+        super(MappingKernelManager, self).start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/multikernelmanager.py", line 158, in start_kernel
+        km.start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 305, in start_kernel
+        self.kernel = self._launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 212, in _launch_kernel
+        return launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/launcher.py", line 135, in launch_kernel
+        proc = Popen(cmd, **kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 800, in __init__
+        restore_signals, start_new_session)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 1551, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/zwwang/scratch-midway2/xarray_env/bin/python': '/home/zwwang/scratch-midway2/xarray_env/bin/python'
+[W 21:52:58.745 LabApp] Unhandled error
+[E 21:52:58.745 LabApp] {
+      "Host": "localhost:8047",
+      "Connection": "keep-alive",
+      "Content-Length": "135",
+      "Sec-Ch-Ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "Authorization": "token da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5",
+      "X-Xsrftoken": "2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "Content-Type": "application/json",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
+      "Sec-Ch-Ua-Platform": "\"macOS\"",
+      "Accept": "*/*",
+      "Origin": "http://localhost:8047",
+      "Sec-Fetch-Site": "same-origin",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Dest": "empty",
+      "Referer": "http://localhost:8047/lab",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+      "Cookie": "username-localhost-8268=\"2|1:0|10:1655246277|23:username-localhost-8268|44:Mjk2MzQ3MTY2OWZiNGM0MjkxNjUyMDM1ZjgxMjMzMmE=|f060e4eee6b7f1fd7cd01fcc26c7f2eee5153553c5b01671a4d35065427b5dc2\"; username-localhost-8105=\"2|1:0|10:1655398304|23:username-localhost-8105|44:MzRiNzRlNjMzN2Y3NGVkMzk3NjE0ZGViYzVjMTRmN2Q=|4b0bb94a9f96c828334490fac00a5cfda3737173d7c652afa4d748f32ac3b4d6\"; username-localhost-8310=\"2|1:0|10:1655425761|23:username-localhost-8310|44:OTNiYTk5YWUyN2IzNGQ2M2JkNTVjNzVkMTBlZTM3NTU=|64ba64a91f3e599317923b5bf9ae7545e7b627b545473880ccc9d884fae5e33b\"; username-localhost-8798=\"2|1:0|10:1655500713|23:username-localhost-8798|44:ZjNiYzFmZWNlMWE4NDBhNWFjYjcwYzNjZDM3MmZiODg=|7129966be60ca14487d5617ff9993483070428fd0512dcedb8a9773a2db7794c\"; username-localhost-8888=\"2|1:0|10:1655751286|23:username-localhost-8888|44:MGMyYTI3NDJmNTQ4NDZmMzgxMjBhNjhjNmU2MTc2MDc=|b40e18bc97922babfab007957de9ce40105e4feb75235f892d7f6b99fece591d\"; username-localhost-8342=\"2|1:0|10:1655850764|23:username-localhost-8342|44:ZjQzODVjZmMzNzkzNGExMDk2NDgyZDhlODlhMzA0YmU=|b6a10c95bcd03832c4eb505f72c168593eb1d86b6d2d0d16c75eb7b90204cdab\"; username-localhost-8303=\"2|1:0|10:1655939161|23:username-localhost-8303|44:MDQ3ZmU0MDM0OGM2NGUyYjhhNDBkZTYwYThiZjY4MTY=|acbbbf55d86485d51c327439ce7e338d922d32ceb646fe3dcec9062ffccd2571\"; username-localhost-8747=\"2|1:0|10:1655959079|23:username-localhost-8747|44:MTJjYWNmMjcwMzMwNDEwMWFjOTk3YWEzZjJhYzBlNzc=|95236791d400169401f110a606e48142739c1cbce33d3eab31ab9f68f678aea2\"; username-localhost-8722=\"2|1:0|10:1656105383|23:username-localhost-8722|44:YTZmYmU2OTU2NzU2NDZhMWE0Y2ViN2YwM2RlNzFkNTA=|593abc48bee7f2d301ebca7c1a09d8fd80de9528ec1e73de3b657df2da482080\"; username-localhost-8297=\"2|1:0|10:1656439086|23:username-localhost-8297|44:NDNkYzBmNWYzNDM1NDA4M2EzYmQ4NzEyZTFiOTcxZTY=|1d0d1be4c09127da371b3264510823442264cc0312b3353cdf00bb0e17c837b4\"; username-localhost-8635=\"2|1:0|10:1656462757|23:username-localhost-8635|44:MmZhYWE2MDlmY2QxNDA4Y2JlZDlmZDIwM2EzNjU4OTE=|27b55599702040b770718aeaed30974f46784e7dc3c2d8450b6410220631edd2\"; _xsrf=2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715; username-localhost-8047=\"2|1:0|10:1657680778|23:username-localhost-8047|44:NGRhMmQ5OTIzMDQyNDhjYmIyYzRjMzQ2OTkxNjA5MmQ=|1f3f3806d952429300efbad196599c7332c30c17c84302b069df22b5d737ff23\""
+    }
+[E 21:52:58.746 LabApp] 500 POST /api/sessions?1657680778717 (10.50.220.71) 14.67ms referer=http://localhost:8047/lab
+[E 21:53:13.113 LabApp] Failed to run command:
+    ['/home/zwwang/scratch-midway2/xarray_env/bin/python', '-m', 'ipykernel_launcher', '-f', '/home/zwwang/.local/share/jupyter/runtime/kernel-b3702c11-12f7-4e16-913c-78973b4c572e.json']
+        PATH='/software/slurm-current-el7-x86_64/bin:/software/python-anaconda-2020.02-el7-x86_64/bin:/software/matlab-2020b-el7-x86_64/bin:/project2/rossby/anaconda/bin:/project2/rossby/group4/isca_env/bin:/software/python-anaconda-2020.02-el7-x86_64/condabin:/bin:/software/git-2.10-el7-x86_64/bin:/software/subversion-1.9.4-el7-x86_64/bin:/software/bin:/srv/adm/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/home/zwwang/bin'
+        with kwargs:
+    {'stdin': -1, 'stdout': None, 'stderr': None, 'cwd': '/project2/rossby/group8', 'start_new_session': True}
+    
+[E 21:53:13.114 LabApp] Uncaught exception POST /api/sessions?1657680793086 (10.50.220.71)
+    HTTPServerRequest(protocol='http', host='localhost:8047', method='POST', uri='/api/sessions?1657680793086', version='HTTP/1.1', remote_ip='10.50.220.71')
+    Traceback (most recent call last):
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/handlers.py", line 72, in post
+        type=mtype))
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 88, in create_session
+        kernel_id = yield self.start_kernel_for_session(session_id, path, name, type, kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 101, in start_kernel_for_session
+        self.kernel_manager.start_kernel(path=kernel_path, kernel_name=kernel_name)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/tornado/gen.py", line 209, in wrapper
+        yielded = next(result)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/notebook/services/kernels/kernelmanager.py", line 168, in start_kernel
+        super(MappingKernelManager, self).start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/multikernelmanager.py", line 158, in start_kernel
+        km.start_kernel(**kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 305, in start_kernel
+        self.kernel = self._launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/manager.py", line 212, in _launch_kernel
+        return launch_kernel(kernel_cmd, **kw)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_client/launcher.py", line 135, in launch_kernel
+        proc = Popen(cmd, **kwargs)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 800, in __init__
+        restore_signals, start_new_session)
+      File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/subprocess.py", line 1551, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/zwwang/scratch-midway2/xarray_env/bin/python': '/home/zwwang/scratch-midway2/xarray_env/bin/python'
+[W 21:53:13.115 LabApp] Unhandled error
+[E 21:53:13.116 LabApp] {
+      "Host": "localhost:8047",
+      "Connection": "keep-alive",
+      "Content-Length": "135",
+      "Sec-Ch-Ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "Authorization": "token da199a1d434b156113c6f7a0672929b39d02f6fd75f376b5",
+      "X-Xsrftoken": "2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "Content-Type": "application/json",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
+      "Sec-Ch-Ua-Platform": "\"macOS\"",
+      "Accept": "*/*",
+      "Origin": "http://localhost:8047",
+      "Sec-Fetch-Site": "same-origin",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Dest": "empty",
+      "Referer": "http://localhost:8047/lab",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+      "Cookie": "username-localhost-8268=\"2|1:0|10:1655246277|23:username-localhost-8268|44:Mjk2MzQ3MTY2OWZiNGM0MjkxNjUyMDM1ZjgxMjMzMmE=|f060e4eee6b7f1fd7cd01fcc26c7f2eee5153553c5b01671a4d35065427b5dc2\"; username-localhost-8105=\"2|1:0|10:1655398304|23:username-localhost-8105|44:MzRiNzRlNjMzN2Y3NGVkMzk3NjE0ZGViYzVjMTRmN2Q=|4b0bb94a9f96c828334490fac00a5cfda3737173d7c652afa4d748f32ac3b4d6\"; username-localhost-8310=\"2|1:0|10:1655425761|23:username-localhost-8310|44:OTNiYTk5YWUyN2IzNGQ2M2JkNTVjNzVkMTBlZTM3NTU=|64ba64a91f3e599317923b5bf9ae7545e7b627b545473880ccc9d884fae5e33b\"; username-localhost-8798=\"2|1:0|10:1655500713|23:username-localhost-8798|44:ZjNiYzFmZWNlMWE4NDBhNWFjYjcwYzNjZDM3MmZiODg=|7129966be60ca14487d5617ff9993483070428fd0512dcedb8a9773a2db7794c\"; username-localhost-8888=\"2|1:0|10:1655751286|23:username-localhost-8888|44:MGMyYTI3NDJmNTQ4NDZmMzgxMjBhNjhjNmU2MTc2MDc=|b40e18bc97922babfab007957de9ce40105e4feb75235f892d7f6b99fece591d\"; username-localhost-8342=\"2|1:0|10:1655850764|23:username-localhost-8342|44:ZjQzODVjZmMzNzkzNGExMDk2NDgyZDhlODlhMzA0YmU=|b6a10c95bcd03832c4eb505f72c168593eb1d86b6d2d0d16c75eb7b90204cdab\"; username-localhost-8303=\"2|1:0|10:1655939161|23:username-localhost-8303|44:MDQ3ZmU0MDM0OGM2NGUyYjhhNDBkZTYwYThiZjY4MTY=|acbbbf55d86485d51c327439ce7e338d922d32ceb646fe3dcec9062ffccd2571\"; username-localhost-8747=\"2|1:0|10:1655959079|23:username-localhost-8747|44:MTJjYWNmMjcwMzMwNDEwMWFjOTk3YWEzZjJhYzBlNzc=|95236791d400169401f110a606e48142739c1cbce33d3eab31ab9f68f678aea2\"; username-localhost-8722=\"2|1:0|10:1656105383|23:username-localhost-8722|44:YTZmYmU2OTU2NzU2NDZhMWE0Y2ViN2YwM2RlNzFkNTA=|593abc48bee7f2d301ebca7c1a09d8fd80de9528ec1e73de3b657df2da482080\"; username-localhost-8297=\"2|1:0|10:1656439086|23:username-localhost-8297|44:NDNkYzBmNWYzNDM1NDA4M2EzYmQ4NzEyZTFiOTcxZTY=|1d0d1be4c09127da371b3264510823442264cc0312b3353cdf00bb0e17c837b4\"; username-localhost-8635=\"2|1:0|10:1656462757|23:username-localhost-8635|44:MmZhYWE2MDlmY2QxNDA4Y2JlZDlmZDIwM2EzNjU4OTE=|27b55599702040b770718aeaed30974f46784e7dc3c2d8450b6410220631edd2\"; _xsrf=2|b78e16e8|eb1163f9865fd4386b5ec00751ea030d|1657680715; username-localhost-8047=\"2|1:0|10:1657680789|23:username-localhost-8047|44:YmQxNWUxODVlMmIyNDQ2MmEwMGVmZDQyNTMyMjI2OTM=|716eb2bb9a5ee490293f6a9e9ecc8ac78a77c6c4577c8d39dc308ea0e665f6a9\""
+    }
+[E 21:53:13.116 LabApp] 500 POST /api/sessions?1657680793086 (10.50.220.71) 17.11ms referer=http://localhost:8047/lab
+[I 21:54:09.716 LabApp] Saving file at /saturation_specific_humidity.ipynb
+[I 21:56:10.018 LabApp] Saving file at /saturation_specific_humidity.ipynb
+slurmstepd-midway2-0006: error: *** JOB 21545180 ON midway2-0006 CANCELLED AT 2022-07-12T21:57:22 ***

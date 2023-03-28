@@ -1,0 +1,16 @@
+
+EnvironmentNameNotFound: Could not find conda environment: conda_env
+You can list all discoverable environments with `conda info --envs`.
+
+
+  jupyter lab --no-browser --ContentsManager.allow_hidden=True --ip=${HOST_IP} --port 8537 
+Traceback (most recent call last):
+  File "/software/python-anaconda-2020.02-el7-x86_64/bin/jupyter-lab", line 6, in <module>
+    from jupyterlab.labapp import main
+  File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyterlab/labapp.py", line 13, in <module>
+    from jupyter_server.serverapp import flags
+  File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/jupyter_server/serverapp.py", line 65, in <module>
+    from nbformat.sign import NotebookNotary
+  File "/software/python-anaconda-2020.02-el7-x86_64/lib/python3.7/site-packages/nbformat/sign.py", line 26, in <module>
+    from traitlets import (
+ImportError: cannot import name 'Callable' from 'traitlets' (/home/zwwang/.local/lib/python3.7/site-packages/traitlets/__init__.py)
